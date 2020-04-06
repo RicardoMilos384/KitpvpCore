@@ -12,9 +12,9 @@ use pocketmine\block\SignChangeEvent;
 class EventListener implements Listener {
 
   public function onInteract(PlayerInteractEvent $event) {
-  		$block = $event->getBlock();
-		  $player = $event->getPlayer();
-		  $sign = $player->getLevel()->getTile($block);
+      $block = $event->getBlock();
+      $player = $event->getPlayer();
+      $sign = $player->getLevel()->getTile($block);
       $sign->setLine(0, "Test1");
       $sign->setLine(1, "Test2");
       $sign->setLine(2, "Test3");
