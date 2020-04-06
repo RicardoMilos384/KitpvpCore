@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dapro718\KitpvpCore
+namespace Dapro718\KitpvpCore;
 
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent;
