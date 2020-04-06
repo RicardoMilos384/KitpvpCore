@@ -6,16 +6,12 @@ namespace Dapro718\KitpvpCore;
   
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
-use pocketmine\player;
-use pocketmine\block\WallSign;
-use pocketmine\event\block\SignChangeEvent;
-use pocketmine\event\player\PlayerInteractEvent;
-use pocketmine\tile\Sign;
-use pocketmine\utils\TextFormat;
 use pocketmine\plugin\Plugin;
 use pocketmine\Server;
 
 class Main extends PluginBase implements Listener{
+  
+  
 
   public function onLoad(): void {
       $this->getLogger()->info("KitPvP Loaded");
