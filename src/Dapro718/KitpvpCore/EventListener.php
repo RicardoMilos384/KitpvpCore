@@ -9,6 +9,7 @@ use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\tile\Sign;
 use pocketmine\block\SignChangeEvent;
 use pocketmine\tile\Sign::setLine();
+use pocketmine\tile\Tile::setLine();
 
 class EventListener implements Listener {
 
