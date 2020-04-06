@@ -11,7 +11,7 @@ use pocketmine\block\SignChangeEvent;
 use pocketmine\tile\Sign::setLine();
 use pocketmine\tile\Tile::setLine();
 
-class EventListener implements Listener {
+class EventListener extends Sign implements Listener {
 
   public function onInteract(PlayerInteractEvent $event) {
       $block = $event->getBlock();
