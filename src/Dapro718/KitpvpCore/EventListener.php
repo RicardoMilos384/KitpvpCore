@@ -7,7 +7,7 @@ namespace Dapro718\KitpvpCore;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\tile\Sign;
-use function setLine();
+use function pocketmine\block\SignChangeEvent;
 
 class EventListener implements Listener {
 
