@@ -14,6 +14,7 @@ class EventListener extends Sign implements Listener {
   public function onInteract(PlayerInteractEvent $event) {
       $block = $event->getBlock();
       $player = $event->getPlayer();
+      $tile = $player->getLevel()->getTile($block);
       if(!($tile instanceof Sign)) {
         return;
       } else {
