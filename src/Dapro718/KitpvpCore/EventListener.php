@@ -18,12 +18,12 @@ class EventListener extends Sign implements Listener {
       $player = $event->getPlayer();
       $sign = $player->getLevel()->getTile($block);
       if($sign instanceof Sign) {
-          $sign->setLine(0, "Test1", true);
-          $sign->setLine(1, "Test2", true);
-          $sign->setLine(2, "Test3", true);
-          $sign->setLine(3, "Test4", true);
-      else {
-          return; 
+        $sign->setLine(0, "Test1", true);
+        $sign->setLine(1, "Test2", true);
+        $sign->setLine(2, "Test3", true);
+        $sign->setLine(3, "Test4", true);
+      } else {
+        return; 
       }
   }
 }
