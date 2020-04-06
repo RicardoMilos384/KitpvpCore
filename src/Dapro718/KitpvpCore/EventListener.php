@@ -15,9 +15,9 @@ class EventListener implements Listener {
       $block = $event->getBlock();
       $player = $event->getPlayer();
       $sign = $player->getLevel()->getTile($block);
-      $sign->setLine(0, "Test1");
-      $sign->setLine(1, "Test2");
-      $sign->setLine(2, "Test3");
-      $sign->setLine(3, "Test4");
+      $sign->setLine(0, "Test1", true);
+      $sign->setLine(1, "Test2", true);
+      $sign->setLine(2, "Test3", true);
+      $sign->setLine(3, "Test4", true);
   }
 }
