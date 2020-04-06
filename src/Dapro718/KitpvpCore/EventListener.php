@@ -22,7 +22,6 @@ class EventListener extends Sign implements Listener {
           $sign->setLine(1, "Test2", true);
           $sign->setLine(2, "Test3", true);
           $sign->setLine(3, "Test4", true);
-      }
       else {
           return; 
       }
