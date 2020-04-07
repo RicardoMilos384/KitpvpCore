@@ -22,7 +22,7 @@ class EventListener extends Sign implements Listener {
 #      $tile->setLine(1, "Hi Feather", true);
 #      $tile->setLine(2, "Hi Feather", true);
 #      $tile->setLine(3, "Hi Feather", true);
-      $tile->setText("Hello", "Feather", "Im your worst", "nightmare")
+      $tile->setText("Hello", "Feather", "Im your worst", "nightmare");
      
   }
 }
