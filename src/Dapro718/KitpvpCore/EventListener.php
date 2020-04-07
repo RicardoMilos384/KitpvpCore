@@ -17,11 +17,11 @@ class EventListener extends Sign implements Listener {
       $block = $event->getBlock();
       $player = $event->getPlayer();
       $tile = $player->getLevel()->getTile($block);
-      if(!($tile instanceof Sign)) {
-        $tile->setLine(0, "Hi Feather");
-        $tile->setLine(1, "Hi Feather");
-        $tile->setLine(2, "Hi Feather");
-        $tile->setLine(3, "Hi Feather");
+      if($tile instanceof Sign) {
+        $tile->setLine(0, "Hi Feather", true);
+        $tile->setLine(1, "Hi Feather", true);
+        $tile->setLine(2, "Hi Feather", true);
+        $tile->setLine(3, "Hi Feather", true);
       }
   }
 }
