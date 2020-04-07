@@ -11,7 +11,7 @@ use pocketmine\block\SignChangeEvent;
 use pocketmine\level\Level;
 use pocketmine\tile\Tile;
 
-class EventListener extends Sign implements Listener {
+class EventListener implements Listener {
   
   public function onInteract(PlayerInteractEvent $event) {
       $block = $event->getBlock();
