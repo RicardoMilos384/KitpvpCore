@@ -18,11 +18,11 @@ class EventListener implements Listener {
       $player = $event->getPlayer();
       $tile = $player->getLevel()->getTile($block);
       $player->sendMessage("Event Activated");
-#      $tile->setLine(0, "Hi Feather", true);
-#      $tile->setLine(1, "Hi Feather", true);
-#      $tile->setLine(2, "Hi Feather", true);
-#      $tile->setLine(3, "Hi Feather", true);
-      $tile->setText("Hello", "Feather", "Im your worst", "nightmare");
+      $tile->setLine(0, "Hi Feather", true);
+      $tile->setLine(1, "Hi Feather", true);
+      $tile->setLine(2, "Hi Feather", true);
+      $tile->setLine(3, "Hi Feather", true);
+#      $tile->setText("Hello", "Feather", "Im your worst", "nightmare");
      
   }
 }
