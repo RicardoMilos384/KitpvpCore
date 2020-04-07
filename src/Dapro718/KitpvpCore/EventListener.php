@@ -17,7 +17,7 @@ class EventListener extends Sign implements Listener {
       $block = $event->getBlock();
       $player = $event->getPlayer();
       $tile = $player->getLevel()->getTile($block);
-      $this->getLogger->info("Event Activated")
+      $this->getLogger->info("Event Activated");
       $tile->setLine(0, "Hi Feather", true);
       $tile->setLine(1, "Hi Feather", true);
       $tile->setLine(2, "Hi Feather", true);
