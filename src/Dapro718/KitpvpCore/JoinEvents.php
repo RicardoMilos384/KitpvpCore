@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Dapro718\KitpvpCore;
 
 use pocketmine\Player;
-use Dapro718\KitpvpCore\utils\arena_player_count;
+use Dapro718\KitpvpCore\utils\Data;
 
 class JoinEvents {
   public $prefix = "§l§8[§1KitPvP§8]§r ";
