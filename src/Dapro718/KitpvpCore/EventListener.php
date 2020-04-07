@@ -13,7 +13,7 @@ use pocketmine\tile\Tile;
 
 class EventListener implements Listener {
   
-  public function __construct(PiggyCustomEnchants $plugin) {
+  public function __construct($plugin) {
         $this->plugin = $plugin;
     }
   
@@ -22,9 +22,9 @@ class EventListener implements Listener {
       $player = $event->getPlayer();
       $tile = $player->getLevel()->getTile($block);
       $player->sendMessage("Event Activated");
-      $tile->setLine(0, "Hi Feather", true);
-      $tile->setLine(1, "Hi Feather", true);
-      $tile->setLine(2, "Hi Feather", true);
-      $tile->setLine(3, "Hi Feather", true);
+      $tile->setLine(0, "Hi", true);
+      $tile->setLine(1, "I'm plugin", true);
+      $tile->setLine(2, "I work", true);
+      $tile->setLine(3, "Tell Dapro", true);
   }
 }
