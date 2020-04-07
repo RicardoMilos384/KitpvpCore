@@ -13,6 +13,10 @@ use pocketmine\tile\Tile;
 
 class EventListener implements Listener {
   
+  public function __construct(PiggyCustomEnchants $plugin) {
+        $this->plugin = $plugin;
+    }
+  
   public function onInteract(PlayerInteractEvent $event) {
       $block = $event->getBlock();
       $player = $event->getPlayer();
