@@ -11,8 +11,6 @@ use pocketmine\block\SignChangeEvent;
 
 class EventListener extends Sign implements Listener {
   
-  $prefix = "§l§8[§1KitPvP§8]§r";
-
   public function onInteract(PlayerInteractEvent $event) {
       $block = $event->getBlock();
       $player = $event->getPlayer();
