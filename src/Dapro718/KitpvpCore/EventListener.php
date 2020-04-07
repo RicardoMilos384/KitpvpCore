@@ -8,20 +8,22 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\tile\Sign;
 use pocketmine\block\SignChangeEvent;
+use _64FF00\PurePerms\data\UserDataManager
 
 class EventListener extends Sign implements Listener {
+  
+  $prefix = "§l§8[§1KitPvP§8]§r"
 
   public function onInteract(PlayerInteractEvent $event) {
       $block = $event->getBlock();
       $player = $event->getPlayer();
       $tile = $player->getLevel()->getTile($block);
+      $group = getGroup($player)
       if(!($tile instanceof Sign)) {
         return;
-      } else {
-        $tile->setLine(0, "Test1", true);
-        $tile->setLine(1, "Test2", true);
-        $tile->setLine(2, "Test3", true);
-        $tile->setLine(3, "Test4", true);
+      } elseif $group === "Leather" or $group === "Chain" or $group === "Iron" {
+        
+        
       }
   }
 }
