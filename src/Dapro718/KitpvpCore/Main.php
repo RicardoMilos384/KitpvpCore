@@ -42,6 +42,7 @@ class Main extends PluginBase implements Listener{
   
   public function onEnable() {
       $this->getLogger()->info("KitPvP Enabled");
+      $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
   }
   
   
