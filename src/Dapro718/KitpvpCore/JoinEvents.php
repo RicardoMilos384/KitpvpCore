@@ -8,7 +8,7 @@ use pocketmine\Player;
 use Dapro718\KitpvpCore\utils\Data;
 
 class JoinEvents {
-  public $prefix = "§l§8[§1KitPvP§8]§r ";
+  /** public $prefix = "§l§8[§1KitPvP§8]§r ";
   
   public function joinOverworld($player, $playerLevel) {
     if($playerLevel === 3) {
@@ -146,5 +146,5 @@ class JoinEvents {
         $player->teleport(new Position(100, 125, 100, "world"));
         $player->sendMessage($prefix . "§aYou have joined the Alien arena.");
         return $nAlien_1;
-    }
+    } */
   }
