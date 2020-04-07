@@ -8,6 +8,8 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\tile\Sign;
 use pocketmine\block\SignChangeEvent;
+use pocketmine\level\Level;
+use pocketmine\tile\Tile;
 
 class EventListener extends Sign implements Listener {
   
