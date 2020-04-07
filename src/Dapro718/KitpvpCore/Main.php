@@ -28,4 +28,8 @@ class Main extends PluginBase implements Listener{
   public function onDisable(): void {
       $this->getLogger()->info("KitPvP Disabled");
   }
+
+
+  public function playerInteractEvent() {
+      $this->plugin->onInteract()
 }
