@@ -24,10 +24,10 @@ class EventListener implements Listener {
       $player->sendMessage("Event Activated");
       if($event->getAction() === PlayerInteractEvent::RIGHT_CLICK_BLOCK) {
         if($tile instanceof Sign) {
-          $event->setLine(0, "Hi", true);
-          $event->setLine(1, "I'm plugin", true);
-          $event->setLine(2, "I work", true);
-          $event->setLine(3, "Tell Dapro", true);
+          $tile->setLine(0, "Hi", true);
+          $tile->setLine(1, "I'm plugin", true);
+          $tile->setLine(2, "I work", true);
+          $tile->setLine(3, "Tell Dapro", true);
         }
       }
   }
