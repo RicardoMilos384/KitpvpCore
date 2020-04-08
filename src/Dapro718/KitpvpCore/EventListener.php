@@ -8,11 +8,10 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\tile\Sign;
 use pocketmine\block\SignChangeEvent;
-use pocketmine\level\Level;
-use pocketmine\tile\Tile;
-use pocketmine\plugin\Plugin;
 
 class EventListener implements Listener {
+  
+  public $plugin;
   
   public function __construct($plugin) {
         $this->plugin = $plugin;
@@ -23,9 +22,13 @@ class EventListener implements Listener {
       $player = $event->getPlayer();
       $tile = $player->getLevel()->getTile($block);
       $player->sendMessage("Event Activated");
-      $tile->setLine(0, "Hi", true);
-      $tile->setLine(1, "I'm plugin", true);
-      $tile->setLine(2, "I work", true);
-      $tile->setLine(3, "Tell Dapro", true);
+      if($event->getAction() === PlayerInteractEvent::RIGHT_CLICK_BLOCK) {
+        if($tile instanceof Sign) {
+          $event->setLine(0, "Hi", true);
+          $event->setLine(1, "I'm plugin", true);
+          $event->setLine(2, "I work", true);
+          $event->setLine(3, "Tell Dapro", true);
+        }
+      }
   }
 }
