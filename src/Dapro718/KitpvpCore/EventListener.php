@@ -8,6 +8,9 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\tile\Sign;
 use pocketmine\block\SignChangeEvent;
+use pocketmine\event\entity\EntityDamageByEntityEvent;
+use pocketmine\event\player\PlayerDeathEvent;
+use pocketmine\Player;
 
 class EventListener implements Listener {
   
@@ -30,5 +33,9 @@ class EventListener implements Listener {
           $tile->setLine(3, "Tell Dapro", true);
         }
       }
+  }
+  
+  public function onPlayerDeath(PlayerDeathEvent $event) {
+     
   }
 }
