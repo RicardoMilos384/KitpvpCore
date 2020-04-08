@@ -10,6 +10,7 @@ use pocketmine\tile\Sign;
 use pocketmine\block\SignChangeEvent;
 use pocketmine\level\Level;
 use pocketmine\tile\Tile;
+use pocketmine\plugin\Plugin;
 
 class EventListener implements Listener {
   
