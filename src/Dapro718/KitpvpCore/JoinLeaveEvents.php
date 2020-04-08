@@ -24,7 +24,7 @@ class JoinEvents {
   }
   
   
-  public function getArenaPlayerCount($playerLevel, $arena)
+  public function getArenaPlayerCount($playerLevel, $arena) {
     $data = new Config(KitpvpCore::getInstance()->getDataFolder() . "arenas.yml", Config::YAML);
     return (int) $config->get($arena . $playerLevel);
 }
